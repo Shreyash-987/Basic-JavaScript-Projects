@@ -18,6 +18,7 @@ function playGame(input){
 
     if(playerChoice === computerChoice){
         result = "ITS A TIE!"
+    
     }
     else{
         switch(playerChoice){
@@ -30,22 +31,26 @@ function playGame(input){
             case "scissors":
                 result = (computerChoice == "paper") ? "YOU WIN!" : "YOU LOSE!";
         }
+    }
 
         playerDisplay.textContent = "PLAYER: " + playerChoice;
         computerDisplay.textContent = "COMPUTER: " + computerChoice;
         resultDisplay.textContent = result;
 
+        resultDisplay.classList.remove("greenText" , "redText")
+
         switch(result){
             case "YOU WIN!":
-                resultDisplay.classList.add("greenText")
+                resultDisplay.classList.add("greenText");
                 playerScore++;
                 break;
             case "YOU LOSE!":
-                resultDisplay.classList.add("redText")
+                resultDisplay.classList.add("redText");
                 computerScore++;
+                break;
         }
 
         playerScoreDisplay.textContent = "Player Score: " + playerScore
-        computerScoreDisplay.textContent = "Player Score: " + computerScore
-    }
+        computerScoreDisplay.textContent = "Computer Score: " + computerScore
+    
 }
