@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    font-size: 3rem;
+    border-radius: 100px;
+    background-color: hsl(43, 68%, 79%);
+    border-color: hsl(43, 69%, 43%);
+    margin: 25px;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 3rem;
+}
+
+p {
+    font-family: fantasy;
+    font-size: 2rem;
+}
+
+.greenText{
+    color: hsl(120, 43%, 63%);
+}
+
+.redText{
+    color: hsl(0, 57%, 61%);
+}
