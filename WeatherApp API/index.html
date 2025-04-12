@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <input type="text" class="cityInput" placeholder="Enter City Name" />
+
+      <button onclick="getWeatherData()">Get Weather</button>
+    </div>
+    <div class="weatherCard" style="display: none">
+      <h1 id="cityDisplay">Dallas</h1>
+      <h1 id="tempuratureDisplay">45.0 F</h1>
+      <p id="humidityDisplay">humudity: 63%</p>
+      <p id="descriptionDisplay">clear sky</p>
+      <p id="emoji"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

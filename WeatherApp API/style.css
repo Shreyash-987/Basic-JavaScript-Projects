@@ -1,0 +1,55 @@
+:root{
+    --fontfam: "Special Gothic";
+    --weight-800: 800;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    margin-top: 30px;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: var(--fontfam);
+    font-weight: 800;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: hsl(120, 79%, 39%);
+    color: white;
+    font-family: var(--fontfam);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: hsl(120, 79%, 29%);
+}
+
+.weatherCard{
+    margin-top: 30px;   
+    width: 400px;
+    height: 500px;
+    border: solid;
+    border-radius: 10px;
+    text-align: center;
+    font-family: var(--fontfam);
+    font-size: 20px;
+    box-shadow: 1px 2px 2px;
+}
+
+#emoji{
+    font-size: 75px;
+}
